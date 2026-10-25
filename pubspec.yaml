@@ -1,0 +1,28 @@
+name: keyboard_controller
+description: "Frame-synced keyboard tracking, keyboard-aware layout and scrolling, and interactive drag-to-dismiss. A Flutter port of react-native-keyboard-controller."
+version: 0.1.0
+homepage: https://github.com/kirillzyusko/react-native-keyboard-controller
+
+environment:
+  sdk: ^3.13.2
+  # `Color.withValues` and `SliverMainAxisGroup`.
+  flutter: ">=3.27.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.keyboardcontroller.keyboard_controller
+        pluginClass: KeyboardControllerPlugin
+      ios:
+        pluginClass: KeyboardControllerPlugin
+
